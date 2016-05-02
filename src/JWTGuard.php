@@ -231,6 +231,16 @@ class JWTGuard implements Guard
     }
 
     /**
+     * Check the token is valid
+     * 
+     * @return bool
+     */
+    public function check()
+    {
+        return $this->jwt->check();
+    }
+    
+    /**
      * Set the token.
      *
      * @param  \Tymon\JWTAuth\Token|string  $token
